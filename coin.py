@@ -15,6 +15,9 @@ def ran(client, message):
   message.reply('Please set a range!')
 
 
+@app.on_message(Filters. command('dice'))
+def randheadtain(client, message):
+    client.send_message(message.chat.id, random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
 
 
 
