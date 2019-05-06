@@ -9,11 +9,15 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 def randheadtain(client, message):
             message.reply(random.choice(['🤷 Coin flipped: Head', '🤷 Coin flipped: Tail']))
 
-
-
-@app.on_message(Filters. command('sps'))
+app.on_message(Filters. command('toss'))
 def randheadtain(client, message):
-            message.reply(random.choice(['💫 Result : Stone ', '💫 Result : Paper ','💫 Result : Scissors ']))
+            message.reply(random.choice(['🤷 Coin flipped: Head', '🤷 Coin flipped: Tail']))
+
+
+
+@app.on_message(Filters. command('decide'))
+def randheadtain(client, message):
+            message.reply(random.choice(['💫 Result : Yes ', '💫 Result : Maybe ','💫 Result : No ']))
 
 
 
