@@ -7,11 +7,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 @app.on_message(Filters. command('toss'))
 def randheadtain(client, message):
-     chat = update.effective_chat  # type: Optional[Chat]
-    message = update.effective_message  # type: Optional[Message]
-    user = update.effective_user  #
-
-    if user_id == 'administrator'
+          if user_id == 'administrator'
             message.reply(random.choice(['Coin flipped: Head', 'Coin flipped: Tail']))
 
 
