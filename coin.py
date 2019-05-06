@@ -5,7 +5,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 @app.on_message(Filters. command('toss'))
 def randheadtain(client, message):
     client.send_message(message.chat.id, random.choice(['Coin flipped: Head', 'Coin flipped: Tail']))
-
+    message.reply(random.choice(['Coin flipped: Head', 'Coin flipped: Tail']))
 
 @app.on_message(Filters.command('roll'))
 def ran(client, message):
