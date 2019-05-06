@@ -11,16 +11,8 @@ from tg_bot.modules.helper_funcs.chat_status import bot_admin, can_promote, user
 
 @app.on_message(Filters. command('toss'))
 def randheadtain( client, message) :
-    chat_id = update.effective_chat.id
-    message = update.effective_message  # type: Optional[Message]
-    chat = update.effective_chat  # type: Optional[Chat]
-    user = update.effective_user  # type: Optional[User]
+    message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
 
-    user_id = extract_user(message, args)
-           
-   
-if user_member.status == 'administrator' or user_member.status == 'creator':
-        message.reply_text("How am I meant to promote someone that's already an admin?")
         
 
 
