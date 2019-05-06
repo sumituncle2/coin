@@ -10,7 +10,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 @app.on_message(Filters. command('toss'))
-def promote( args: List[str]) -> str:
+def randheadtain( client, message) :
     chat_id = update.effective_chat.id
     message = update.effective_message  # type: Optional[Message]
     chat = update.effective_chat  # type: Optional[Chat]
