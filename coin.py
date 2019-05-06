@@ -17,7 +17,7 @@ def randheadtain(client, message):
 
 app.on_message(Filters. command('start'))
 def randheadtain(client, message):
-    message.reply( Get /help to help for buy Contact - @google_console )
+    message.reply( 'Get /help to help for buy Contact - @google_console ')
 
 
 @app.on_message(Filters.command('roll'))
@@ -35,18 +35,18 @@ def randheadtain(client, message):
 
 @app.on_message(Filters. command('help'))
 def randheadtain(client, message):
-    message.reply('My commands :
-/toss
-/roll {range}
-/sps
-/dice
-/dice2
-/show - teen Patti
-/show2
-/show1
-/decide
+    message.reply('My commands : /toss , /roll {range} ,/sps , /dice , /dice2 , /show , /show1 , /show2 , /decide Need Help Contact - @google_console ')
+
+
+
+
+
+
+
+
+
  
-Need Help Contact - @google_console')
+
 @app.on_message(Filters. command('show'))
 def show(client, message):
     message.reply(random.choice([ '👨‍🎓 Your Card : 2⃣','👨‍🎓 Your Card : 3⃣','👨‍🎓 Your Card : 4⃣','👨‍🎓 Your Card : 5⃣','👨‍🎓 Your Card : 2⃣','👨‍🎓 Your Card : 6⃣','👨‍🎓 Your Card : 7⃣','👨‍🎓 Your Card : 8⃣','👨‍🎓 Your Card : 9⃣','👨‍🎨 Your Card : 🔟','🧛‍♂ Your Card : 🇦​','🤴 Your Card : 🇰','👨‍🎨 Your Card : 🇯​','👸 Your Card : 🇶​']))
