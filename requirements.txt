@@ -1,3 +1,5 @@
 pyrogram
 telepot
 telethon
+TgCrypto
+Telegram
