@@ -13,7 +13,7 @@ def randheadtain(client, message):
 
 @app.on_message(Filters. command('sps'))
 def randheadtain(client, message):
-            message.reply(random.choice(['💫 Result : Stone ', '💫 Result : Paper ','💫 Result : Scicore']))
+            message.reply(random.choice(['💫 Result : Stone ', '💫 Result : Paper ','💫 Result : Scissors ']))
 
 
 
