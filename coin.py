@@ -5,8 +5,6 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 
-from tg_bot.modules.helper_funcs.chat_status import bot_admin, can_promote, user_admin, can_pin
-
 
 
 @app.on_message(Filters. command('toss'))
