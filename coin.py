@@ -25,12 +25,7 @@ if user_member.status == 'administrator' or user_member.status == 'creator':
 
 
 
-
-
-
-
-
- message.reply(random.choice(['🤷 Coin flipped: Head', '🤷 Coin flipped: Tail']))
+ 
 
 
 
