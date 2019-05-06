@@ -33,7 +33,7 @@ def randheadtain(client, message):
     message.reply(random.choice(['👨‍🎓 Your Luck : 1⃣','👨‍🎓 Your Luck : 2⃣','👨‍🎓 Your Luck : 3⃣','👨‍🎓 Your Luck : 4⃣','👨‍🎓 Your Luck  : 5⃣','👨‍🎓 Your Luck : 2⃣','👨‍⚕ Your Luck : 6⃣']))
 
 
-app.on_message(Filters. command('help'))
+@app.on_message(Filters. command('help'))
 def randheadtain(client, message):
     message.reply('```My commands :
 /toss
