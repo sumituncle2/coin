@@ -10,7 +10,7 @@ def randheadtain(client, message):
             message.reply(random.choice(['🤷 Coin flipped: Head', '🤷 Coin flipped: Tail']))
 
 
-@app.on_message(Filters. command('decide'))
+@app.on_message(Filters. command('sps'))
 def randheadtain(client, message):
             message.reply(random.choice(['💫 Result : Paper ', '💫 Result : Stone ','💫 Result : Sessiors']))
 
