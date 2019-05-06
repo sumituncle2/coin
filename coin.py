@@ -25,6 +25,17 @@ def randheadtain(client, message):
 def show(client, message):
     client.send_message(message.chat.id, [random.choice(['A','1','2','3','4','5','6','7','8','9','10','J','K','Q'])for i in range(3)])
 
+
+@app.on_message(Filters. command('dice2'))
+def randheadtain(client, message):
+    client.send_message(message.chat.id, random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
+    client.send_message(message.chat.id, random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
+
+
+
+
+
+
 app.run()
 
 while 1:
