@@ -21,7 +21,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
    
 if user_member.status == 'administrator' or user_member.status == 'creator':
         message.reply_text("How am I meant to promote someone that's already an admin?")
-        return ""
+        
 
 
 
