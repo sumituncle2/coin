@@ -23,13 +23,16 @@ def randheadtain(client, message):
 
 @app.on_message(Filters. command('show'))
 def show(client, message):
-    client.send_message(message.chat.id, [random.choice(['A','1','2','3','4','5','6','7','8','9','10','J','K','Q'])for i in range(3)])
+    client.send_message(message.chat.id, random.choice([ '❤️ Your Card : 1⃣','❤️ Your Card : 2⃣','❤️ Your Card : 3⃣','❤️ Your Card : 4⃣','❤️ Your Card : 5⃣','❤️ Your Card : 2⃣','❤️ Your Card : 6⃣','❤️ Your Card : 7⃣','❤️ Your Card : 8⃣','❤️ Your Card : 9⃣','❤️ Your Card : 🔟','❤️ Your Card : 🇦​','❤️ Your Card : 🇰','❤️ Your Card : 🇯​' ]))
+    client.send_message(message.chat.id, random.choice([ '❤️ Your Card : 1⃣','❤️ Your Card : 2⃣','❤️ Your Card : 3⃣','❤️ Your Card : 4⃣','❤️ Your Card : 5⃣','❤️ Your Card : 2⃣','❤️ Your Card : 6⃣','❤️ Your Card : 7⃣','❤️ Your Card : 8⃣','❤️ Your Card : 9⃣','❤️ Your Card : 🔟','❤️ Your Card : 🇦​','❤️ Your Card : 🇰','❤️ Your Card : 🇯​' ]))
+    client.send_message(message.chat.id, random.choice([ '❤️ Your Card : 1⃣','❤️ Your Card : 2⃣','❤️ Your Card : 3⃣','❤️ Your Card : 4⃣','❤️ Your Card : 5⃣','❤️ Your Card : 2⃣','❤️ Your Card : 6⃣','❤️ Your Card : 7⃣','❤️ Your Card : 8⃣','❤️ Your Card : 9⃣','❤️ Your Card : 🔟','❤️ Your Card : 🇦​','❤️ Your Card : 🇰','❤️ Your Card : 🇯​' ]))
 
 
 @app.on_message(Filters. command('dice2'))
 def randheadtain(client, message):
     client.send_message(message.chat.id, random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
     client.send_message(message.chat.id, random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
+
 
 
 
