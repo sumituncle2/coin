@@ -1,18 +1,50 @@
 from pyrogram import Client, Filters
 import random
 
-
-
-
-
-
 app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 
+
+
+
+
 @app.on_message(Filters. command('toss'))
-def randheadtain(client, message):
-            message.reply(random.choice(['🤷 Coin flipped: Head', '🤷 Coin flipped: Tail']))
+def promote(bot: Bot, update: Update, args: List[str]) -> str:
+    chat_id = update.effective_chat.id
+    message = update.effective_message  # type: Optional[Message]
+    chat = update.effective_chat  # type: Optional[Chat]
+    user = update.effective_user  # type: Optional[User]
+
+    user_id = extract_user(message, args)
+           
+   
+if user_member.status == 'administrator' or user_member.status == 'creator':
+        message.reply_text("How am I meant to promote someone that's already an admin?")
+        return ""
+
+
+
+
+
+
+
+
+ message.reply(random.choice(['🤷 Coin flipped: Head', '🤷 Coin flipped: Tail']))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @app.on_message(Filters. command('sps'))
