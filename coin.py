@@ -9,7 +9,9 @@ def randheadtain(client, message):
 
 @app.on_message(Filters.command('roll'))
 def ran(client, message):
-    client.send_message(message.chat.id, int(random.choice(range(1, int(message.text.split(' ')[1])))))
-
+if len(message.text.split(' ')) > 1:
+ client.send_message(message.chat.id, random.choice(range(1, int(message.text.split(' ')[1]))))
+else:
+ message.reply('add a number bro')
 
 app.run()
