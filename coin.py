@@ -26,7 +26,7 @@ def ran(client, message):
 
 @app.on_message(Filters. command('dice'))
 def randheadtain(client, message):
-    message.reply(random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
+    message.reply(random.choice(['👨‍🎓 Your Luck : 1⃣','👨‍🎓 Your Luck : 2⃣','👨‍🎓 Your Luck : 3⃣','👨‍🎓 Your Luck : 4⃣','👨‍🎓 Your Luck  : 5⃣','👨‍🎓 Your Luck : 2⃣','👨‍⚕ Your Luck : 6⃣']))
 
 
 
@@ -39,8 +39,8 @@ def show(client, message):
 
 @app.on_message(Filters. command('dice2'))
 def randheadtain(client, message):
-    message.reply(random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
-    message.reply(random.choice(['Result: 1','Result: 3','Result: 4','Result: 5' ,'Result: 6' , 'Result: 2']))
+    message.reply(random.choice(['👨‍🎓 Your Luck : 1⃣','👨‍🎓 Your Luck : 2⃣','👨‍🎓 Your Luck : 3⃣','👨‍🎓 Your Luck : 4⃣','👨‍🎓 Your Luck  : 5⃣','👨‍🎓 Your Luck : 2⃣','👨‍⚕ Your Luck : 6⃣']))
+    message.reply(random.choice(['👨‍🎓 Your Luck : 1⃣','👨‍🎓 Your Luck : 2⃣','👨‍🎓 Your Luck : 3⃣','👨‍🎓 Your Luck : 4⃣','👨‍🎓 Your Luck  : 5⃣','👨‍🎓 Your Luck : 2⃣','👨‍⚕ Your Luck : 6⃣']))
 
 
 
