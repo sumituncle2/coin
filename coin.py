@@ -6,7 +6,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 @app.on_message(Filters. command('toss'))
-def randheadtain(client, message):
+def randheadtain(client,telegram.Bot.getChatAdministrators, message):
             message.reply(random.choice(['🤷 Coin flipped: Head', '🤷 Coin flipped: Tail']))
 
 
