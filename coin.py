@@ -17,11 +17,9 @@ def ran(client, message):
 
 
 
-import random
+
 @app.on_message(Filters. command('show'))
 def show(client, message):
-    client.send_message(message.chat.id, [random.choice([A,1,2,3,4,5,6,7,8,9,10,J,K,Q])for i in range(3)]
-)
-
+    client.send_message(message.chat.id, [random.choice(['A','1','2','3','4','5','6','7','8','9','10','J','K','Q'])for i in range(3)])
 
 app.run()
