@@ -2,9 +2,24 @@ from pyrogram import Client, Filters
 import random
 
 app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
+
+
+
 @app.on_message(Filters. command('toss'))
 def randheadtain(client, message):
-    message.reply(random.choice(['Coin flipped: Head', 'Coin flipped: Tail']))
+     chat = update.effective_chat  # type: Optional[Chat]
+    message = update.effective_message  # type: Optional[Message]
+    user = update.effective_user  #
+
+    if user_id == 'administrator'
+            message.reply(random.choice(['Coin flipped: Head', 'Coin flipped: Tail']))
+
+
+
+
+
+
+
 
 @app.on_message(Filters.command('roll'))
 def ran(client, message):
