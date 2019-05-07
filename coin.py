@@ -22,6 +22,12 @@ def randheadtain( client, message) :
 
         
 
+def user_admin(func):
+    @wraps(func)
+    def is_admin(bot: Bot, update: Update, *args, **kwargs):
+        user = update.effective_user  # type: Optional[User]
+        if user and is_user_admin(update.effective_chat, user.id):
+            return func(bot, update, *args, **kwargs)
         
 
 
