@@ -40,6 +40,11 @@ def randheadtain( client, message) :
 
 
 
+@app.on_message(Filters. command('gun'))
+def randheadtain( client, message) :
+    message.reply(random.choice(['💫 Result : AK47 😎', '💫 Result : Muflis 💥 ']))
+
+
 
 
 
@@ -81,7 +86,7 @@ def randheadtain(client, message):
 
 @app.on_message(Filters. command('help'))
 def randheadtain(client, message):
-    message.reply('My commands : /toss , /side , /roll {range} ,/sps , /dice , /dice2 , /show , /show1 , /show2 , /decide Need Help Contact - @google_console ')
+    message.reply('My commands : /toss , /gun , /side , /roll {range} ,/sps , /dice , /dice2 , /show , /show1 , /show2 , /decide Need Help Contact - @google_console ')
 
 
 
