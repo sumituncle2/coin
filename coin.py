@@ -1,6 +1,15 @@
 from pyrogram import Client, Filters
 import random
 
+
+from typing import Optional, List
+
+from telegram import Message, Chat, Update, User
+
+
+
+
+
 app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
