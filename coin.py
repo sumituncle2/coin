@@ -17,7 +17,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 
-
+id = '-1001356076506'
 target = "zearn"  # Target channel/supergroup
 
 with app:
