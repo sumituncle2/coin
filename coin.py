@@ -1,4 +1,4 @@
-from pyrogram import Client, Filters, emoji
+from pyrogram import Client, Filters, Emoji
 import random
 
 
