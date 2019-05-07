@@ -17,14 +17,6 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 
-id = '-1001356076506'
-target = "zearn"  # Target channel/supergroup
-
-with app:
-    for member in app.iter_chat_members(target):
-        
-  message.reply(message.chat.id, member.user.first_name)
-
 
 
 
