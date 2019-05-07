@@ -22,7 +22,8 @@ target = "zearn"  # Target channel/supergroup
 
 with app:
     for member in app.iter_chat_members(target):
-        client.send_message(message.chat.id, member.user.first_name)
+        
+   Client.send_message(message.chat.id, member.user.first_name)
 
 
 
