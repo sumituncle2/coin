@@ -37,9 +37,9 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 @app.on_message(Filters. command('toss'))
-def get_chat_member(chat_id,user_id) :
-    message.reply('your name user_id')
-    message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
+def get_chat_member(chat_id,user_id, client, message) :
+    client.message.reply('your name user_id')
+    client.message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
 
         
 
