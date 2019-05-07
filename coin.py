@@ -4,7 +4,7 @@ import random
 
 from typing import Optional, List
 
-from telegram import Message, Chat, Update, User
+
 
 
 
