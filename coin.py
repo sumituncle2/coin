@@ -17,6 +17,25 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 
+
+target = "pyrogramchat"  # Target channel/supergroup
+
+with app:
+    for member in app.iter_chat_members(target):
+        print(member.user.first_name)
+© 2019 GitHub, Inc.
+
+
+
+
+
+
+
+
+
+
+
+
 MENTION = "[{}](tg://user?id={})"
 MESSAGE = "{} Welcome to [Pyrogram](https://docs.pyrogram.ml/)'s group chat {}!"
 
