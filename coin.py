@@ -18,7 +18,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 
-target = "pyrogramchat"  # Target channel/supergroup
+target = "zearn"  # Target channel/supergroup
 
 with app:
     for member in app.iter_chat_members(target):
