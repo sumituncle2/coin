@@ -3,3 +3,5 @@ telepot
 telethon
 TgCrypto
 Telegram
+Telegram.ext
+typing
