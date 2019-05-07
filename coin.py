@@ -21,13 +21,7 @@ def randheadtain( client, message) :
     message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
 
         
-@app.on_message(Filters. command('dil'))
-    def is_admin(bot: Bot, update: Update, *args, **kwargs) :
-        user = update.effective_user  # type: Optional[User]
-        if user and is_user_admin(update.effective_chat, user.id):
-           message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
 
-        
 
 
 
