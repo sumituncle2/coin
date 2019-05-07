@@ -37,7 +37,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 
 @app.on_message(Filters. command('toss'))
-def get_chat_member(chat_id,user_id, client, message) :
+def get_chat_member(chat_id, user_id ) → pyrogram.client.types.user_and_chats.chat_member.ChatMember :
     client.message.reply('your name user_id')
     client.message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
 
