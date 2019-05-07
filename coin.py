@@ -15,7 +15,7 @@ def randheadtain( client, message) :
 
 
 @app.on_message(Filters. command('admin'))
- def admin( client,
+ def admin( client, chat_id,)
 
 
 
