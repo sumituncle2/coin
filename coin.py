@@ -43,6 +43,10 @@ def randheadtain( client, message) :
 
 
 
+@app.on_message(Filters. command('side'))
+def randheadtain(client, message):
+            message.reply(random.choice(['💫 Result : Up 👆 ', '💫 Result : Down 👇 ','💫 Result : Left ,','💫 Result : Right ']))
+
 
 
 
