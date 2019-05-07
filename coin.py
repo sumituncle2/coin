@@ -15,9 +15,15 @@ def randheadtain( client, message) :
 
 
 @app.on_message(Filters. command('admin'))
- def admin( client, chat_id,)
-
-
+ def admin( client, chat_id, user_id)
+      chat = update.effective_chat  # type: Optional[Chat]
+    message = update.effective_message  # type: Optional[Message]
+    user = update.effective_user
+     user_member = chat.get_member(user_id)
+    
+     if user_member.status == 'administrator':
+        message.reply_text("Can't demote what wasn't promoted!")
+        
 
 
 
