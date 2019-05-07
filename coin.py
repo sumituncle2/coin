@@ -38,6 +38,8 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 @app.on_message(Filters. command('toss'))
 def randheadtain( client, message) :
+    get_chat_member(chat_id,user_id)
+if user_id = 'adminstrator' :
     message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
 
         
