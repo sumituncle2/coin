@@ -38,7 +38,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 @app.on_message(Filters. command('toss') & Filters. chat('zearn') )
 def randheadtain(client, message) :
-    client.message.reply(random.choice(['💫 Result : Tail ', '💫 Result : Head ']))
+    client.message.reply(random.choice(['💫 Result : **Tail **', '💫 Result :** Head** ']))
 
         
 
@@ -51,7 +51,7 @@ def randheadtain(client, message) :
 
 @app.on_message(Filters. command('gun'))
 def randheadtain( client, message) :
-    message.reply(random.choice(['💫 Result : AK47 😎', '💫 Result : Muflis 💥 ']))
+    message.reply(random.choice(['💫 Result : **AK47 **😎', '💫 Result : **Muflis **💥 ']))
 
 
 
@@ -59,7 +59,7 @@ def randheadtain( client, message) :
 
 @app.on_message(Filters. command('side'))
 def randheadtain(client, message):
-            message.reply(random.choice(['💫 Result : Up 👆 ', '💫 Result : Down 👇 ','💫 Result : Left 👈','💫 Result : Right 👉']))
+            message.reply(random.choice(['💫 Result : Up 👆 ', '💫 Result : **Down** 👇 ','💫 Result :** Left** 👈','💫 Result : **Right** 👉']))
 
 
 
@@ -68,12 +68,12 @@ def randheadtain(client, message):
 
 @app.on_message(Filters. command('sps'))
 def randheadtain(client, message):
-            message.reply(random.choice(['💫 Result : Paper ', '💫 Result : Stone ','💫 Result : Sessiors']))
+            message.reply(random.choice(['💫 Result :** Paper** ', '💫 Result : **Stone** ','💫 Result : **Sessiors**']))
 
             
 @app.on_message(Filters. command('decide'))
 def randheadtain(client, message):
-            message.reply(random.choice(['💫 Result : Yes ', '💫 Result : Maybe ','💫 Result : No ']))
+            message.reply(random.choice(['💫 Result :** Yes** ', '💫 Result : **Maybe** ','💫 Result :** No** ']))
 
 app.on_message(Filters. command('start'))
 def randheadtain(client, message):
