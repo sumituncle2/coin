@@ -24,7 +24,7 @@ def randheadtain( client, message) :
 
 
 @app.on_message(Filters. command('admin'))
- def randheadtain( client, message)
+ def randheadtain( client, chat_id, user_id, message) :
       chat = update.effective_chat  # type: Optional[Chat]
     message = update.effective_message  # type: Optional[Message]
     user = update.effective_user
