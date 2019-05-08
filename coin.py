@@ -82,13 +82,16 @@ def randheadtain(client, message):
 
 @app.on_message(Filters.command('roll'))
 def ran(client, message):
- if client.get_chat_member(-1001257117902, message.from_user.id).status == 'administrator':
+ if client.get_chat_member(-1001257117902, message.from_user.id).status == 'Administrator':
   if len(message.text.split(' ')) > 1:
-  message.reply(random.choice(range(1, int(message.text.split(' ')[1]))))
+   message.reply(random.choice(range(1, int(message.text.split(' ')[1]))))
   else:
    message.reply('Please set a range!')
  else:
   message.reply('You are not admin')
+
+
+
 
 @app.on_message(Filters. command('dice'))
 def randheadtain(client, message):
