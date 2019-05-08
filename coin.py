@@ -38,9 +38,10 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 @app.on_message(Filters. command('toss'))
 def ran(client, message) :
-    if client.get_chat_member(message.chat.id , message.from_user.id).status == ('creator', 'administrator'):
+    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
        message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
-
+   else if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+           message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
         
 
 
