@@ -38,7 +38,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 @app.on_message(Filters. command('toss') )
 def randheadtain(client, message) :
-    client.message.reply(random.choice(['💫 Result : **Tail **', '💫 Result :** Head** ']))
+    message.reply(random.choice(['💫 Result : **Tail **', '💫 Result :** Head** ']))
 
         
 
