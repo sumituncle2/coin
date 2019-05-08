@@ -87,6 +87,8 @@ def ran(client, message):
 def ran(client, message):
    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
     message.reply(random.choice(['💫 Result :** Yes** ', '💫 Result : **Maybe** ','💫 Result :** No** ']))
+   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+    message.reply(random.choice(['💫 Result :** Yes** ', '💫 Result : **Maybe** ','💫 Result :** No** ']))
 
 
 
