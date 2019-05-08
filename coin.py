@@ -155,7 +155,7 @@ def ran(client, message):
 
 @app.on_message(Filters. command('toss'))
 def ran(client, message) :
-    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'Creator':
        message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
     
         
