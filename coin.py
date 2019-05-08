@@ -82,7 +82,7 @@ def randheadtain(client, message):
 
 @app.on_message(Filters.command('roll'))
 def ran(client, message):
- if client.get_chat_member(-1001356076506, message.from_user.id).status == 'administrator':
+ if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
   if len(message.text.split(' ')) > 1:
    message.reply(random.choice(range(1, int(message.text.split(' ')[1]))))
   else:
