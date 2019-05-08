@@ -38,7 +38,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 
 @app.on_message(Filters. command('toss'))
 def randheadtain(client, message) :
-    message.reply(random.choice(['💫 Result : **Tail **', '💫 Result :** Head** ']))
+    message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
 
         
 
@@ -51,7 +51,7 @@ def randheadtain(client, message) :
 
 @app.on_message(Filters. command('gun'))
 def randheadtain( client, message) :
-    message.reply(random.choice(['💫 Result : **AK47 **😎', '💫 Result : **Muflis **💥 ']))
+    message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Muflis**💥 ']))
 
 
 
