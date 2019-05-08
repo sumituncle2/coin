@@ -80,7 +80,7 @@ def randheadtain(client, message):
     message.reply( 'Get /help to help for buy Contact - @google_console ')
 
 
-@@app.on_message(Filters.command('roll'))
+@app.on_message(Filters.command('roll'))
 def ran(client, message):
  if client.get_chat_member(-1001257117902, message.from_user.id).status == 'administrator':
   if len(message.text.split(' ')) > 1:
