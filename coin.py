@@ -56,9 +56,9 @@ def ran(client, message) :
 @app.on_message(Filters. command('gun'))
 def ran( client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
-           message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Muflis**💥 ']))
+           message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Ruger**💥 ']))
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
-           message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Muflis**💥 ']))
+           message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Ruger**💥 ']))
 
 
 
