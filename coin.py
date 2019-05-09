@@ -93,12 +93,10 @@ def ran(client, message):
 
 
 
-app.on_message(Filters. command('start'))
+@app.on_message(Filters. command('start'))
 def ran(client, message):
-  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
-    message.reply( 'Get /help to help for buy Contact - @google_console ')
-  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
-    message.reply(random.choice(['💫 Result :** Yes** ', '💫 Result : **Maybe** ','💫 Result :** No** ']))
+    message.reply( 'This is teen patti bot with roll, dice, toss and too many features for buy Contact - @google_console ✓✓ ')
+ 
 
 
 
