@@ -118,7 +118,22 @@ def ran(client, message):
 
  
 
- 
+ @app.on_message(Filters.command('droll'))
+def ran(client, message):
+ if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
+  if len(message.text.split(' ')) > 1:
+    message.reply(random.choice(range(1, int(message.text.split(' ')[1]))))
+    message.reply(random.choice(range(1, int(message.text.split(' ')[1]))))
+  else:
+    message.reply('Please set a range!')
+ if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+  if len(message.text.split(' ')) > 1:
+    message.reply(random.choice(range(1, int(message.text.split(' ')[1]))))
+    message.reply(random.choice(range(1, int(message.text.split(' ')[1]))))
+  else:
+    message.reply('Please set a range!')
+
+
 
 
 
