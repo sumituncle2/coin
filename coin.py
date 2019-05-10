@@ -39,7 +39,7 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 @app.on_message(Filters. command('toss'))
 def ran(client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
-      file = open("text.txt" , "r")
+      file = open("sure.txt" , "r")
       lines = file.readlines()
       file.close()
       for line in lines:
@@ -48,7 +48,7 @@ def ran(client, message) :
         if line == "cheat":
             message.reply("💫 Result : **Tail**")
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
-      file = open("text.txt" , "r")
+      file = open("sure.txt" , "r")
       lines = file.readlines()
       file.close()
       for line in lines:
