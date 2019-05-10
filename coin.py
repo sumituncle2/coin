@@ -64,13 +64,30 @@ def ran(client, message) :
 
 @app.on_message(Filters. command('cheatmodeon')) 
 def ran(client , message):
+  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+    file = open("sure.txt" , "w")
+    file.write("cheat")
+    file.close()
+    message.reply("Cheating mode on! , toss only tail now ✓✓")
+  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
     file = open("sure.txt" , "w")
     file.write("cheat")
     file.close()
     message.reply("Cheating mode on! , toss only tail now ✓✓")
 
+
+
+
+
 @app.on_message(Filters. command('cheatmodeoff')) 
 def ran(client , message):
+  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+    file = open("sure.txt" , "w")
+    file.write("nocheat")
+    file.close()
+    message.reply("Cheating mode off! ")
+
+  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
     file = open("sure.txt" , "w")
     file.write("nocheat")
     file.close()
