@@ -39,9 +39,19 @@ app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
 @app.on_message(Filters. command('toss'))
 def ran(client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
-       message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
+      
+      file = open("text.txt" , "r")
+      lines = file.readlines()
+    
+      file.close()
+   
+      for line in lines:
+        if line == "cheat": 
+
+
+              message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
-       message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
+              message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
     
         
         
