@@ -46,18 +46,18 @@ def ran(client, message) :
         
         
 
-@app.on_message(Filters.command('cheatmodeon'), Filters.private) 
-def ran(client , message) 
-    files = open("sure.txt" , "w")
-    files.write("cheat")
-    files.close()
+@app.on_message(Filters.command('cheatmodeon'), Filters.private) :
+def ran(client , message):
+    file = open("sure.txt" , "w")
+    file.write("cheat")
+    file.close()
     message.reply("Cheating mode on! , toss only tail now ✓✓")
 
-@app.on_message(Filters.command('cheatmodeoff'), Filters.private) 
-def ran(client , message) 
-    files = open("sure.txt" , "w")
-    files.write("nocheat")
-    files.close()
+@app.on_message(Filters.command('cheatmodeoff'), Filters.private) :
+def ran(client , message):
+    file = open("sure.txt" , "w")
+    file.write("nocheat")
+    file.close()
     message.reply("Cheating mode off! ")
 
 
