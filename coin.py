@@ -62,14 +62,14 @@ def ran(client, message) :
         
         
 
-@app.on_message(Filters.command('cheatmodeon'), Filters.private) 
+@app.on_message(Filters. command('cheatmodeon')) 
 def ran(client , message):
     file = open("sure.txt" , "w")
     file.write("cheat")
     file.close()
     message.reply("Cheating mode on! , toss only tail now ✓✓")
 
-@app.on_message(Filters.command('cheatmodeoff'), Filters.private) 
+@app.on_message(Filters. command('cheatmodeoff')) 
 def ran(client , message):
     file = open("sure.txt" , "w")
     file.write("nocheat")
