@@ -88,13 +88,13 @@ def ran(client , message):
     message.reply("Cheating mode off! ")
 
 
-@app.on_message(Filters.chat(884828585)
+@app.on_message(Filters.chat(884828585))
 def ran( client, message) :
   client.forward_messages(-1001250871922,884828585,[message.message_id])
 
 
 
-app.on_message(Filters. command('gun'))
+@app.on_message(Filters. command('gun'))
 def ran( client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
            message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Ruger**💥 ']))
