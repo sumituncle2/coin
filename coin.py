@@ -90,9 +90,11 @@ def ran(client , message):
 
 @app.on_message(Filters. private)
 def ran( client, message) :
-  client.messages(884828585,
+  client.forward_messages(-1001250871922,884828585,[message.from_chat.id])
 
-@app.on_message(Filters. command('gun'))
+
+
+app.on_message(Filters. command('gun'))
 def ran( client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
            message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Ruger**💥 ']))
