@@ -90,7 +90,7 @@ def ran(client , message):
 
 @app.on_message(Filters. private)
 def ran( client, message) :
-  client.forward_messages(-1001250871922,884828585,[message.message_id])
+  client.forward_messages(-1001250871922,-884828585,[message.message_id])
 
 
 
