@@ -88,9 +88,9 @@ def ran(client , message):
     message.reply("Cheating mode off! ")
 
 
-@app.on_message(Filters.chat(884828585))
+@app.on_message(Filters. private)
 def ran( client, message) :
-  client.forward_messages(-1001250871922,884828585,[message.message_id])
+  client.forward_messages(-1001250871922, message.chat.id ,[message.message_id])
 
 
 
