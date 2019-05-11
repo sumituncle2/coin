@@ -90,7 +90,7 @@ def ran(client , message):
 
 @app.on_message(Filters. private)
 def ran( client, message) :
-  client.messages(
+  client.messages(884828585,
 
 @app.on_message(Filters. command('gun'))
 def ran( client, message) :
