@@ -62,7 +62,7 @@ def ran(client, message) :
         
         
 
-@app.on_message(Filters. command('cheatmodeon')) 
+@app.on_message(Filters. command('cheatmodeons')) 
 def ran(client , message):
   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
     file = open("sure.txt" , "w")
@@ -79,7 +79,7 @@ def ran(client , message):
 
 
 
-@app.on_message(Filters. command('cheatmodeoff')) 
+@app.on_message(Filters. command('cheatmodeoffs')) 
 def ran(client , message):
   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
     file = open("sure.txt" , "w")
@@ -87,14 +87,17 @@ def ran(client , message):
     file.close()
     message.reply("Cheating mode off! ")
 
-  if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
-    file = open("sure.txt" , "w")
-    file.write("nocheat")
-    file.close()
-    message.reply("Cheating mode off! ")
 
+@app.on_message(Filters. private)
+def ran( client, message) :
+  client.messages(
 
-
+@app.on_message(Filters. command('gun'))
+def ran( client, message) :
+    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
+           message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Ruger**💥 ']))
+    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
+           message.reply(random.choice(['💫 Result : **AK47**😎', '💫 Result : **Ruger**💥 ']))
 
 
 
