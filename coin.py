@@ -44,9 +44,9 @@ def ran(client, message) :
       file.close()
       for line in lines:
         if line == "nocheat": 
-            message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
+            message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ',  '💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ']))
         if line == "cheat":
-            message.reply("💫 Result : **Tail**")
+            message.reply('💫 Result : **Tail**")
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
       file = open("sure.txt" , "r")
       lines = file.readlines()
