@@ -83,7 +83,7 @@ def ran(client, message) :
         
         
 
-@app.on_message(Filters. command('cheatmodeons')) 
+@app.on_message(Filters. command('cheatmodeonss')) 
 def ran(client , message):
   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
     file = open("sure.txt" , "w")
@@ -100,7 +100,7 @@ def ran(client , message):
 
 
 
-@app.on_message(Filters. command('cheatmodeoffs')) 
+@app.on_message(Filters. command('cheatmodeoffss')) 
 def ran(client , message):
   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
     file = open("sure.txt" , "w")
