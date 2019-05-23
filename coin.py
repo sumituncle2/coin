@@ -44,18 +44,18 @@ def ran(client, message) :
       file.close()
       for line in lines:
         if line == "nocheat": 
-            message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ',  '💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ']))
+            message.reply(random.choice(['💫 Result : **Head**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ',  '💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Tail** ']))
         if line == "cheat":
-            message.reply("💫 Result : **Tail**")
+            message.reply("💫 Result : **Head**")
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
       file = open("sure.txt" , "r")
       lines = file.readlines()
       file.close()
       for line in lines:
         if line == "nocheat": 
-            message.reply(random.choice(['💫 Result : **Tail**', '💫 Result :**Head** ']))
+            message.reply(random.choice(['💫 Result : **Head**', '💫 Result :**Tail** ']))
         if line == "cheat":
-            message.reply("💫 Result : **Tail**")
+            message.reply("💫 Result : **Head**")
    
 @app.on_message(Filters. command('status'))
 def ran(client, message) :
@@ -89,12 +89,12 @@ def ran(client , message):
     file = open("sure.txt" , "w")
     file.write("cheat")
     file.close()
-    message.reply("Cheating mode on! , toss only tail now ✓✓")
+    message.reply("Cheating mode on! , toss only head now ✓✓")
   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
     file = open("sure.txt" , "w")
     file.write("cheat")
     file.close()
-    message.reply("Cheating mode on! , toss only tail now ✓✓")
+    message.reply("Cheating mode on! , toss only head now ✓✓")
 
 
 
