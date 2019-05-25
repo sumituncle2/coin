@@ -4,37 +4,7 @@ import random
 
 from typing import Optional, List
 
-
-
-
-
-
-
-
 app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @app.on_message(Filters. command('toss'))
 def ran(client, message) :
@@ -43,20 +13,24 @@ def ran(client, message) :
       lines = file.readlines()
       file.close()
       for line in lines:
-        if line == "nocheat": 
-            message.reply(random.choice(['💫 Result : **Head**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ',  '💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Tail** ']))
         if line == "cheat":
             message.reply("💫 Result : **Head**")
+        else:
+            message.reply(random.choice(['💫 Result : **Head**', '💫 Result :**Tail** ','💫 Result : **Tail**', '💫 Result :**Head** ',  '💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ']))
+  
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'administrator':
       file = open("sure.txt" , "r")
       lines = file.readlines()
       file.close()
       for line in lines:
-        if line == "nocheat": 
-            message.reply(random.choice(['💫 Result : **Head**', '💫 Result :**Tail** ']))
         if line == "cheat":
             message.reply("💫 Result : **Head**")
-   
+        
+        else:
+            message.reply(random.choice(['💫 Result : **Head**', '💫 Result :**Tail** ','💫 Result : **Tail**', '💫 Result :**Head** ',  '💫 Result : **Tail**', '💫 Result :**Head** ','💫 Result : **Tail**', '💫 Result :**Head** ']))
+  
+
+
 @app.on_message(Filters. command('status'))
 def ran(client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
@@ -116,6 +90,7 @@ def ran(client , message):
 
 @app.on_message(Filters. private)
 def ran( client, message) :
+  message.reply( 'This is teen patti bot with roll, dice, toss and too many features for buy Contact - @google_console ✓✓ ')
   client.forward_messages(-1001250871922, message.chat.id ,[message.message_id])
 
 
@@ -159,16 +134,6 @@ def ran(client, message):
     message.reply(random.choice(['💫 Result :** Yes** ', '💫 Result : **Maybe** ','💫 Result :** No** ']))
    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
     message.reply(random.choice(['💫 Result :** Yes** ', '💫 Result : **Maybe** ','💫 Result :** No** ']))
-
-
-
-
-@app.on_message(Filters.private)
-def ran(client, message):
-    message.reply( 'This is teen patti bot with roll, dice, toss and too many features for buy Contact - @google_console ✓✓ ')
- 
-
-
 
 
 @app.on_message(Filters.command('roll'))
@@ -275,13 +240,7 @@ def ran(client, message):
    if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
        message.reply(random.choice([ '👨‍🎓 Your Card : 2⃣','👨‍🎓 Your Card : 3⃣','👨‍🎓 Your Card : 4⃣','👨‍🎓 Your Card : 5⃣','👨‍🎓 Your Card : 2⃣','👨‍🎓 Your Card : 6⃣','👨‍🎓 Your Card : 7⃣','👨‍🎓 Your Card : 8⃣','👨‍🎓 Your Card : 9⃣','👨‍🎨 Your Card : 🔟','🧛‍♂ Your Card : 🇦​','🤴 Your Card : 🇰','👨‍🎨 Your Card : 🇯​','👸 Your Card : 🇶​']))
     
-
-
-
-
-
-
 app.run()
 
-while 1:
-    time.sleep(10)
+
+    
