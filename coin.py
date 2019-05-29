@@ -4,7 +4,7 @@ import random
 
 from typing import Optional, List
 
-app = Client('835349563:AAEraMgAMwRFzOdv7kMLVOYSRgYBL-mlTwA')
+app = Client('832452054:AAGnGZveZ0ccTLDnz7P5Bi9WesnTHdnWizs')
 
 
 
