@@ -325,6 +325,16 @@ def ran(client, message):
        client.forward_messages(-1001250871922, message.chat.id ,[message.message_id])
 
 
+@app.on_message(Filters. command('leavechat'))
+def ran(client,message):
+ if message.from_user.id == 491634139:
+  if len(message.text.split( )) > 1:
+    client.leave_chat(int(message.text.split(' ')[1]))
+  else:
+    client.leave_chat(message.chat.id)
+    
+
+
 
 
 
