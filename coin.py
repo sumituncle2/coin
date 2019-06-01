@@ -39,7 +39,7 @@ def ran(client, message) :
 
 
 
-@app.on_message(Filters. command('status'))
+@app.on_message(Filters. command('stats'))
 def ran(client, message) :
     if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
       file = open("sure.txt" , "r")
@@ -65,7 +65,7 @@ def ran(client, message) :
         
         
 
-@app.on_message(Filters. command('cheatmodeonss')) 
+@app.on_message(Filters. command('cheat_yes')) 
 def ran(client , message):
   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
     file = open("sure.txt" , "w")
@@ -82,7 +82,7 @@ def ran(client , message):
 
 
 
-@app.on_message(Filters. command('cheatmodeoffss')) 
+@app.on_message(Filters. command('cheat_no')) 
 def ran(client , message):
   if client.get_chat_member(message.chat.id , message.from_user.id).status == 'creator':
     file = open("sure.txt" , "w")
